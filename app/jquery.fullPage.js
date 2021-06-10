@@ -2445,6 +2445,7 @@
         * Sets a class for the body of the page depending on the active section / slide
         */
         function setBodyClass(){
+            console.log('holiii');
             var section = $(SECTION_ACTIVE_SEL);
             var slide = section.find(SLIDE_ACTIVE_SEL);
 
