@@ -6,6 +6,7 @@
   src: url(https://fonts.gstatic.com/s/abrilfatface/v12/zOL64pLDlL1D99S8g8PtiKchq-lmjdLh.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Abril Fatface';
@@ -15,6 +16,46 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-body{
+body {
   background-color: #123;
+}
+
+.sky-color {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#013064), color-stop(#00102A), color-stop(#07182b), color-stop(#061220), to(#020b16));
+  background-image: -webkit-linear-gradient(top, #013064, #00102A, #07182b, #061220, #020b16);
+  background-image: -o-linear-gradient(top, #013064, #00102A, #07182b, #061220, #020b16);
+  background-image: linear-gradient(to bottom, #013064, #00102A, #07182b, #061220, #020b16);
+  z-index: -200
+}
+
+header .global-nav {
+  background-image: -webkit-gradient(linear, left top, right top, from(#00102A), color-stop(42%, #013064), to(#5AEDF5));
+  background-image: -webkit-linear-gradient(left, #00102A, #013064 42%, #5AEDF5);
+  background-image: -o-linear-gradient(left, #00102A, #013064 42%, #5AEDF5);
+  background-image: linear-gradient(to right, #00102A, #013064 42%, #5AEDF5);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -o-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  z-index: -100
 }
